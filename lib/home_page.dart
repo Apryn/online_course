@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:online_course/theme.dart';
 
 class home_page extends StatefulWidget {
   const home_page({Key? key}) : super(key: key);
@@ -10,6 +11,8 @@ class home_page extends StatefulWidget {
 class _home_pageState extends State<home_page> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      backgroundColor: Bgcolor,
+    );
   }
 }

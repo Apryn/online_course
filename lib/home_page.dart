@@ -528,12 +528,12 @@ class _home_pageState extends State<home_page> {
         backgroundColor: Colors.white,
         showSelectedLabels: false,
         unselectedItemColor: Color(0xffD1E2FD),
+        selectedItemColor: Colors.blue,
         iconSize: 25,
         items: const [
           BottomNavigationBarItem(
             icon: Icon(
               Icons.home,
-              color: Colors.blue,
             ),
             label: 'Home',
           ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:online_course/home_page.dart';
+import 'Details_page.dart';
 
 void main() => runApp(Myapp());
 
@@ -15,7 +16,7 @@ class _MyappState extends State<Myapp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: home_page(),
+      home: Details_page(),
     );
   }
 }

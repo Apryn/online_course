@@ -132,9 +132,44 @@ class _Details_pageState extends State<Details_page> {
                 IconButton(onPressed: () {}, icon: Icon(Icons.arrow_right))
               ],
             ),
+            SizedBox(
+              height: 10,
+            ),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: [
+                  categories("About"),
+                  categories("Lesson"),
+                  categories("Tools"),
+                  categories("Resource"),
+                  categories("Review"),
+                ],
+              ),
+            )
           ],
         ),
       )),
+    );
+  }
+
+  Widget categories(
+    String? Name,
+  ) {
+    return Container(
+      margin: EdgeInsets.only(right: 5),
+      padding: EdgeInsets.symmetric(horizontal: 5),
+      // width: 50,
+      height: 30,
+
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(10),
+      ),
+      child: Center(
+          child: TextButton(
+              onPressed: () {},
+              child: Text(Name!, style: Regular.copyWith(fontSize: 10)))),
     );
   }
 }
